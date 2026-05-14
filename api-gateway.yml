@@ -6,12 +6,12 @@ spring:
     gateway:
       routes:
         - id: student-service1
-          uri: lb://STUDENT-SERVICE
+          uri: lb://STUDENT-SERVICE1
           predicates:
             - Path=/student/**
 
         - id: school-service1-1
-          uri: lb://SCHOOL-SERVICE
+          uri: lb://SCHOOL-SERVICE1-1
           predicates:
             - Path=/school/**
 
